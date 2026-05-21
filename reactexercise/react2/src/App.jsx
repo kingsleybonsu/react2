@@ -1,17 +1,14 @@
-// import HeroSection from "./HeroSection";
-import Welcome from "./welcome";
+import Greeting from "./Greeting";
 
-const students = [
-  {name: "harry" ,  age:"32"},
-  {name: "harry",  age:"22"},
-  {name: "harry" , age:"62"}
-];
-
-function Pen() {
-  return(
-    <>
-      <Welcome students={students}/>
-    </>
+function App() {
+  return (
+    <div>
+      <Greeting name="Kingsley" />
+      <Greeting name="Harrison" />
+      <Greeting name="Kwame" />
+      <Greeting name="John" />
+    </div>
   );
 }
-export default Pen;
+
+export default App;
